@@ -2,22 +2,8 @@ package generics;
 
 public class PrintArray {
 
-	public static void toPrint(Integer[] inputArray) {
-		for (int element : inputArray) {
-			System.out.print(element + " ");
-		}
-		System.out.println();
-	}
-
-	public static void toPrint(Double[] inputArray) {
-		for (double element : inputArray) {
-			System.out.print(element + " ");
-		}
-		System.out.println();
-	}
-
-	public static void toPrint(Character[] inputArray) {
-		for (char element : inputArray) {
+	public static <E> void toPrint(E[] inputArray) {
+		for (E element : inputArray) {
 			System.out.print(element + " ");
 		}
 		System.out.println();
